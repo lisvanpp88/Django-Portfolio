@@ -1,0 +1,120 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for centering content */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #04AA6D; /* Adds a border around the photo */
+}
+
+/* About Me text */
+.about-me {
+    margin: 20px 0;
+}
+
+/*.about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-indent: 40px; 
+}*/
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    margin-left: 0; /* Alinea completamente a la izquierda */
+    padding-left: 0; /* Quita cualquier espacio interno a la izquierda */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    text-indent: 40px;
+}
+
+/* Social Media Links */
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #04AA6D; /* Blue color for social media links */
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #4CAF50; /* Darker blue on hover */
+}
+
+/* Button for downloading resume */
+.resume-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #04AA6D; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resume-btn:hover {
+    background-color: #4CAF50; /* Button color on hover */
+}
+
+.certifications-list {
+    list-style-type: none; /* Elimina los puntos */
+    padding-left: 0; /* Elimina el margen izquierdo */
+}
+
+.certifications-list li {
+    margin-bottom: 10px; /* Agrega espacio entre los elementos */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-me p {
+        font-size: 16px;
+    }
+
+    .social-media a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .resume-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<p>About me</p>
+{% endblock title %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock extrahead %}
+    
+{% block content %}
+    <div class="container">
+        <img src="/media/project_images/perfil.png" alt="Your Name" class="profile-photo">
+
+        <h1>About Me</h1>
+        <div class="about-me">
+            <p>Hello! I'm Lisvan, a passionate software engineer with a specialization in Python and Data Analytics. I have over 8 years of experience in education, combined with 5 years of hands-on experience as a software developer. Throughout my career, I've been involved in both teaching and building innovative software solutions, giving me a well-rounded skill set that bridges education and technology. I’m constantly learning and adapting to new technologies and tools in order to build innovative projects.</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/lisvan-porro-pimienta-682936168/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/lisvanpp88" target="_blank">GitHub</a>
+        </div>
+
+        <a href="{% static 'files/LISVAN_PORRO.docx' %}" class="resume-btn" download="LISVAN_PORRO.docx">Download My Resume</a>
+
+        <h2>Certifications</h2>
+        <ul class="certifications-list">
+            <li>
+                <a href="{% static 'files/GoogleAdvancedDataAnalytics.pdf' %}" download="Certification_1.pdf" class="btn-download">Download Certification 1</a>
+            </li>
+            <li>
+                <a href="{% static 'files/GoogleDataAnalyticsCertificate.pdf' %}" download="Certification_2.pdf" class="btn-download">Download Certification 2</a>
+            </li>
+            <li>
+                <a href="{% static 'files/PythonAndStatisticsForFinancialAnalysis.pdf' %}" download="Certification_3.pdf" class="btn-download">Download Certification 3</a>
+            </li>
+        </ul>                   
+    </div>
+
+{% endblock content %}
+
+
